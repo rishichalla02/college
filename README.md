@@ -1,2 +1,2 @@
 "# college" 
-"# college" 
+practicals 
