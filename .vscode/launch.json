@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/college/college/college-1",
-      "program": "d:/college/college/college-1/build/Debug/outDebug",
+      "cwd": "d:/college",
+      "program": "d:/college/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
