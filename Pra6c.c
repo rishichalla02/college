@@ -3,7 +3,7 @@
 
 struct Node
 {   
-    struct Node*prive;
+    struct Node *prive;
     int info;
     struct Node *next;
 }*head=NULL;
@@ -25,12 +25,12 @@ void pushFront()
         head=node;
     }    
 }
-void PushAtPostion()
+void PushAtPosition()
 {
     int pos,count;
     struct Node *temp=head,*temp1=NULL;
 
-    printf("Enter position to insert at any  ");
+    printf("Enter position to insert at any position ");
     scanf("%d",&pos);
 
     while (temp!=NULL)
@@ -40,7 +40,7 @@ void PushAtPostion()
     }
     if(pos<=0 || pos>count)
     {
-        printf("Invalide Position \n");
+        printf("Invalid Position \n");
         return ;
     }
     else if (pos==1)
@@ -126,7 +126,7 @@ void popFront()
     }
 }
 
-void PopAtPostion()
+void PopAtPosition()
 {
      int pos,count;
     struct Node *temp=head,*temp1=NULL;
@@ -152,7 +152,7 @@ void PopAtPostion()
     else if (pos==1)
     {
         temp1=head;
-        printf("DElete Element is %d \n",head->info);
+        printf("Delete Element is %d \n",head->info);
         head->next->prive=NULL;
         head=head->next;
         free(temp1);
@@ -229,7 +229,7 @@ int main()
     {
         printf("\nEnter 1. to Insert node at the front of the Doubly List.");
         printf("\nEnter 2. to Insert node at the end of the Doubly List.");
-        printf("\nEnter 3. to Insert node in At any position the Doubly List.");
+        printf("\nEnter 3. to Insert node in at any position the Doubly List.");
         printf("\nEnter 4. to Delete first node from the Doubly List.");
         printf("\nEnter 5. to Delete the node  at any position from the Doubly List.");
         printf("\nEnter 6. to Delete the node Last position from the Doubly List.");
@@ -246,13 +246,13 @@ int main()
                 pushEnd();
                 break;
             case 3:
-                PushAtPostion();
+                PushAtPosition();
                 break;
             case 4:
                 popFront();
                 break;
             case 5:
-                PopAtPostion();
+                PopAtPosition();
                 break;
             case 6:
                 popEnd();
