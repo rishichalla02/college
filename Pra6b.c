@@ -166,13 +166,11 @@ int main()
             }            
         }
         
-        printf("If Exit then continue 0 : ");
+        printf("If you want to continue 0 : ");
         scanf("%d",&ch);
-
-        
+     
     } while (ch==0);
     
-
     return 0;
     }
 
