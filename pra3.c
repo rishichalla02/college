@@ -21,7 +21,7 @@ void scan(int n)
       printf("\n Enter Semester : ");
       scanf("%d",&s[i].sem);
       printf("\n Enter Branch : ");
-      scanf("%s",&s[i].branch);  
+      scanf("%s",&s[i].branch);
     }
 }    
 void print(int n)
@@ -46,7 +46,7 @@ int main()
     {
     printf("\n 1) Add data 2) Print data 3) exit");
     scanf("%d",&c);
-    switch (c)
+    switch(c)
       {
         case 1 :
              scan(a);
